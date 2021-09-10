@@ -14,15 +14,18 @@
   <body>
     <main class="main-page">
       <!--component-->
-      <div class="flex-center-column social-proof">
+      <div class="social-proof flex-center-column">
         <!--first element-->
-        <div class="flex-center social-proof__info">
-          <div class="social-proof__presentation">
+        <div class="social-proof__info-box flex-center">
+          <!--text-section-->
+          <section class="social-proof__presentation-box">
             <h1 class="social-proof__tittle">10,000+ of our users love our products.</h1>
             <span class="social-proof__text">We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.</span>
-          </div>
-          <div class="flex-center-column social-proof__review">
-            <div class="review-product">
+          </section>
+          <!--review-section-->
+          <section class="social-proof__review-box ">
+            <!--first block-->
+            <div class="review-product flex-center review-product--move-first">
               <img src="./images/icon-star.svg" alt="star" class="review-product__image">
               <img src="./images/icon-star.svg" alt="star" class="review-product__image">
               <img src="./images/icon-star.svg" alt="star" class="review-product__image">
@@ -30,7 +33,7 @@
               <img src="./images/icon-star.svg" alt="star" class="review-product__image">
               <h3 class="review-product__text">Rated 5 Stars in Reviews</h3>
             </div>
-            <div class="review-product">
+            <div class="review-product flex-center review-product--move-center">
               <img src="./images/icon-star.svg" alt="star" class="review-product__image">
               <img src="./images/icon-star.svg" alt="star" class="review-product__image">
               <img src="./images/icon-star.svg" alt="star" class="review-product__image">
@@ -38,7 +41,7 @@
               <img src="./images/icon-star.svg" alt="star" class="review-product__image">
               <h3 class="review-product__text">Rated 5 Stars in Report Guru</h3>
             </div>
-            <div class="review-product">
+            <div class="review-product flex-center review-product--move-last">
               <img src="./images/icon-star.svg" alt="star" class="review-product__image">
               <img src="./images/icon-star.svg" alt="star" class="review-product__image">
               <img src="./images/icon-star.svg" alt="star" class="review-product__image">
@@ -46,36 +49,37 @@
               <img src="./images/icon-star.svg" alt="star" class="review-product__image">
               <h3 class="review-product__text">Rated 5 Stars in BestTech</h3>
             </div>
-          </div>
+          </section>
         </div>
         <!--second element-->
-        <div class="flex-center social-proof__comments">
+        <div class="social-proof__comments-box flex-center">
+          <!--second block-->
           <div class="comment-product">
-            <div class="flex-center info-user">
-              <img src="./images/image-colton.jpg" alt="user" class="info-user__user-image">
-              <div class="info-user__container">
+            <div class="info-user flex-center">
+              <img src="./images/image-colton.jpg" alt="user" class="info-user__image">
+              <div class="info-user__box">  
                 <h3 class="info-user__name">Colton Smith</h3>
-                <span class="info-user__profesion">Verified Buyer</span>
+                <span class="info-user__job">Verified Buyer</span>
               </div>
             </div>
             <p class="comment-product__text">"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"</p>
           </div>
-          <div class="comment-product">
-            <div class="flex-center info-user">
-              <img src="./images/image-irene.jpg" alt="user" class="info-user__user-image">
-              <div class="info-user__container">
+          <div class="comment-product comment-product--move-center">
+            <div class="info-user flex-center">
+              <img src="./images/image-irene.jpg" alt="user" class="info-user__image">
+              <div class="info-user__box">
                 <h3 class="info-user__name">Irene Roberts</h3>
-                <span class="info-user__profesion">Verified Buyer</span>
+                <span class="info-user__job">Verified Buyer</span>
               </div>
             </div>
             <p class="comment-product__text">"Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."</p>
           </div>
-          <div class="comment-product">
-            <div class="flex-center info-user">
-              <img src="./images/image-anne.jpg" alt="user" class="info-user__user-image">
-              <div class="info-user__container">
+          <div class="comment-product comment-product--move-last">
+            <div class="info-user flex-center">
+              <img src="./images/image-anne.jpg" alt="user" class="info-user__image">
+              <div class="info-user__box">
                 <h3 class="info-user__name">Anne Wallace</h3>
-                <span class="info-user__profesion">Verified Buyer</span>
+                <span class="info-user__job">Verified Buyer</span>
               </div>
             </div>
             <p class="comment-product__text">"Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"</p>
