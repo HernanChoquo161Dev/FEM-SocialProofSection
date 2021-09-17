@@ -205,7 +205,7 @@ body {
     font-size: 100%;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 780px) {
   body {
     background-image: url("../images/bg-pattern-top-mobile.svg");
     background-size: contain;
@@ -228,22 +228,22 @@ body {
   .social-proof__opinions {
     flex-direction: column;
 
-    padding-top: 80px;
+    padding-top: 8rem;
   }
   /*--*/
   .social-proof__tittle {
     font-size: 6rem;
     display: block;
     margin: 0;
-    padding: 0 40px;
-    margin-bottom: 30px;
+    padding: 0 4rem;
+    margin-bottom: 3rem;
   }
   .social-proof__description {
     font-size: 3rem;
     display: block;
     padding: 0;
 
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
   }
   /*--*/
   .social-proof__score {
@@ -256,29 +256,29 @@ body {
     flex-direction: column;
     justify-content: center;
 
-    padding: 20px 40px;
+    padding: 2rem 4rem;
   }
   .user-score__box-image {
     display: block;
     margin: 0;
 
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
   .user-score__image {
-    width: 24px;
+    width: 2.4rem;
   }
   .user-score__box-text {
     display: block;
   }
   .user-score__text {
-    font-size: 20px;
+    font-size: 2rem;
   }
   /**/
   .user-opinion {
     width: 100%;
 
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
   }
   .user-info {
     padding: 6rem;
@@ -295,5 +295,20 @@ body {
 
     padding: 0 6rem;
     padding-bottom: 6rem;
+  }
+}
+@media screen and (max-width: 620px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 41%;
+  }
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 37.5%;
   }
 }
