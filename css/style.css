@@ -39,15 +39,16 @@ body {
 }
 .main-page {
   width: 100vw;
-  margin-top: 10vh;
 }
 .social-proof {
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
 
+  padding: 0 18rem;
+  padding-top: 12rem;
   margin: auto;
 }
 /**/
@@ -185,8 +186,6 @@ body {
   margin-left: 3rem;
   margin-right: 3rem;
 }
-.user-opinion--start {
-}
 .user-opinion--center {
   position: relative;
   margin-top: 2rem;
@@ -196,14 +195,24 @@ body {
   margin-top: 4rem;
 }
 
+@media screen and (min-width: 1900px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 56%;
+  }
+}
 @media screen and (max-width: 1250px) {
   html {
     font-size: 50%;
   }
 }
-@media screen and (min-width: 1900px) {
+@media screen and (max-width: 1024px) {
   html {
-    font-size: 100%;
+    font-size: 43.2%;
   }
 }
 @media screen and (max-width: 780px) {
@@ -216,9 +225,11 @@ body {
     font-size: 62.5%;
   }
   .social-proof {
-    width: 90%;
-    padding-top: 6rem;
-    padding-bottom: 10rem;
+    width: 100%;
+
+    padding: 0 3rem;
+    padding-top: 16rem;
+    padding-bottom: 16rem;
   }
   /**/
   .social-proof__info {
@@ -317,5 +328,10 @@ body {
 @media screen and (max-width: 360px) {
   html {
     font-size: 31.25%;
+  }
+}
+@media screen and (max-width: 260px) {
+  html {
+    font-size: 25%;
   }
 }
