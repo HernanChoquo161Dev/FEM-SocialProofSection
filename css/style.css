@@ -28,30 +28,29 @@ html {
 }
 /**CSS - Container component**/
 body {
+  height: 100vh;
+
   background-color: var(--color-background);
   background-size: 40vw, 80vw;
   background-image: url(../images/bg-pattern-top-desktop.svg),
     url("../images/bg-pattern-bottom-desktop.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: left 0vw top 0vh, right 0 bottom 0;
-
   font-family: "Spartan", sans-serif;
 }
-.main-page {
-  width: 100vw;
-}
+/*CSS - Component*/
 .social-proof {
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  width: 100%;
 
   padding: 0 18rem;
   padding-top: 12rem;
+  padding-bottom: 4rem;
   margin: auto;
 }
-/**/
+/*CSS - Info and Opinions section*/
 .social-proof__info {
   flex-basis: 50%;
 
@@ -66,13 +65,14 @@ body {
 
   padding-top: 6rem;
 }
-/**/
+/*CSS - Presentation and Score section*/
 .social-proof__text {
   flex-basis: 46%;
 }
 .social-proof__score {
   flex-basis: 54%;
 }
+/*CSS - Score component*/
 .social-proof__tittle {
   color: var(--color-tittle);
   font-size: 5.6rem;
@@ -90,15 +90,13 @@ body {
 
   padding-right: 6rem;
 }
-/**/
+/*CSS - Score section*/
 .user-score {
   background-color: var(--color-score);
   color: var(--color-tittle);
 
   display: flex;
-  flex-basis: 100%;
   align-items: center;
-  flex-wrap: wrap;
 
   margin-top: 1.6rem;
   padding: 1rem 3rem;
@@ -106,7 +104,7 @@ body {
   border-radius: 0.8rem;
 }
 .user-score__box-image {
-  display: inline-block;
+  flex: 0 0 auto;
 
   margin-right: 3rem;
 }
@@ -115,7 +113,7 @@ body {
   margin-right: 0.6rem;
 }
 .user-score__box-text {
-  display: inline-block;
+  flex: 1 1 auto;
 }
 .user-score__text {
   font-size: 1.4rem;
@@ -123,7 +121,7 @@ body {
 
   margin: 1rem 0;
 }
-/*------*/
+/*--CSS - Score component - Modifiers--*/
 .user-score--start {
   margin-right: 16rem;
 }
@@ -134,7 +132,7 @@ body {
 .user-score--end {
   margin-left: 16rem;
 }
-/**/
+/*CSS - Opionions component*/
 .user-opinion {
   background-color: var(--color-tittle);
   color: var(--color-background);
@@ -143,25 +141,21 @@ body {
   border-radius: 2rem;
 }
 .user-info {
-  display: block;
-
   padding: 3rem 3.6rem;
   padding-top: 3.6rem;
-}
-.user-info__box-image {
-  display: inline-block;
+
+  display: flex;
+  align-items: center;
 }
 .user-info__image {
-  width: 4.6rem;
+  width: 4.8rem;
   border-radius: 100%;
 }
 .user-info__presentation {
-  position: relative;
   display: inline-block;
   font-size: 1.4rem;
 
   margin-left: 3rem;
-  top: -0.8rem;
 }
 .user-info__name {
   display: block;
@@ -172,8 +166,6 @@ body {
   display: block;
 }
 .user-opinion__text {
-  display: block;
-
   font-size: 136%;
   font-weight: 400;
   line-height: 2.2rem;
@@ -181,20 +173,18 @@ body {
   padding: 0 3.6rem;
   padding-bottom: 3.6rem;
 }
-/**/
+/*CSS - Opionions component - Modifiers*/
 .user-opinion--margin {
   margin-left: 3rem;
   margin-right: 3rem;
 }
 .user-opinion--center {
-  position: relative;
   margin-top: 2rem;
 }
 .user-opinion--end {
-  position: relative;
   margin-top: 4rem;
 }
-
+/*CSS - Changes for the adaptation responsive*/
 @media screen and (min-width: 1900px) {
   html {
     font-size: 100%;
@@ -215,52 +205,61 @@ body {
     font-size: 43.2%;
   }
 }
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 38.2%;
+  }
+}
+/*CSS - Changes for the adaptation of the mobile*/
 @media screen and (max-width: 780px) {
   body {
-    background-image: url("../images/bg-pattern-top-mobile.svg");
-    background-size: contain;
-    background-position: left top;
+    height: auto;
+
+    background-image: url("../images/bg-pattern-top-mobile.svg"),
+      url("../images/bg-pattern-bottom-mobile.svg");
+    background-size: contain, contain;
+    background-position: left top right bottom;
   }
   html {
     font-size: 62.5%;
   }
+  /*CSS - Component*/
   .social-proof {
-    width: 100%;
-
     padding: 0 3rem;
     padding-top: 16rem;
     padding-bottom: 16rem;
   }
-  /**/
+  /*CSS - Info section*/
   .social-proof__info {
     flex-direction: column;
 
     text-align: center;
   }
+  /*CSS - Opinions section*/
   .social-proof__opinions {
     flex-direction: column;
 
     padding-top: 8rem;
   }
-  /*--*/
+  /*CSS - Opionions component*/
   .social-proof__tittle {
     font-size: 6rem;
-    display: block;
+
     margin: 0;
     padding: 0 4rem;
     margin-bottom: 3rem;
   }
   .social-proof__description {
     font-size: 3rem;
-    display: block;
-    padding: 0;
 
+    padding: 0;
     margin-bottom: 6rem;
   }
-  /*--*/
+  /*CSS - Score section*/
   .social-proof__score {
     padding: 0;
   }
+  /*CSS - Score component*/
   .user-score {
     margin: 0;
     margin-top: 2rem;
@@ -271,7 +270,6 @@ body {
     padding: 2rem 4rem;
   }
   .user-score__box-image {
-    display: block;
     margin: 0;
 
     margin-bottom: 1rem;
@@ -279,15 +277,13 @@ body {
   .user-score__image {
     width: 2.4rem;
   }
-  .user-score__box-text {
-    display: block;
-  }
   .user-score__text {
     font-size: 2rem;
   }
-  /**/
+  /*CSS - Opinion component*/
   .user-opinion {
     width: 100%;
+    flex-basis: auto;
 
     margin: 0;
     margin-bottom: 4rem;
