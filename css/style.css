@@ -40,6 +40,8 @@ body {
 }
 /*CSS - Component*/
 .social-proof {
+  max-width: 1520px;
+
   display: flex;
   justify-content: center;
   align-content: center;
@@ -182,33 +184,19 @@ body {
   margin-top: 4rem;
 }
 /*CSS - Changes for the adaptation responsive*/
-@media screen and (min-width: 1900px) {
+@media screen and (max-width: 1500px) {
   html {
-    font-size: 100%;
+    font-size: 40.5%;
   }
-}
-@media screen and (max-width: 1440px) {
-  html {
-    font-size: 56%;
+  /*CSS - Component*/
+  .social-proof {
+    max-width: 1020px;
   }
-}
-@media screen and (max-width: 1250px) {
-  html {
-    font-size: 50%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  html {
-    font-size: 43.2%;
-  }
-}
-@media screen and (max-width: 900px) {
-  html {
-    font-size: 38.2%;
-  }
-}
 /*CSS - Changes for the adaptation of the mobile*/
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 986px) {
+  html {
+    font-size: 62.5%;
+  }
   body {
     height: auto;
 
@@ -216,9 +204,6 @@ body {
       url("../images/bg-pattern-bottom-mobile.svg");
     background-size: contain, contain;
     background-position: left top right bottom;
-  }
-  html {
-    font-size: 62.5%;
   }
   /*CSS - Component*/
   .social-proof {
